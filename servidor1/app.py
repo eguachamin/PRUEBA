@@ -5,10 +5,10 @@ import os
 app = Flask(__name__)
 
 # Configuración de la base de datos MySQL
-app.config['MYSQL_HOST'] = os.getenv("MYSQL_HOST", "mysql_maestro11")
+app.config['MYSQL_HOST'] = os.getenv("MYSQL_HOST", "maestro1")
 app.config['MYSQL_USER'] = os.getenv("MYSQL_USER", "root")
 app.config['MYSQL_PASSWORD'] = os.getenv("MYSQL_PASSWORD", "root")
-app.config['MYSQL_DB'] = os.getenv("MYSQL_DB", "db_info")
+app.config['MYSQL_DB'] = os.getenv("MYSQL_DB", "db_informacion")
 app.config['MYSQL_PORT'] = int(os.getenv("MYSQL_PORT", 3306))
 
 # Inicializar la base de datos

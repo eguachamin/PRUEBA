@@ -28,10 +28,10 @@ services:
   maestro1:
     image: mysql:8.0
     container_name: mysql_maestro11
-    command: --server-id=1 --log-bin=mysql-bin --binlog-do-db=db_info
+    command: --server-id=1 --log-bin=mysql-bin --binlog-do-db=db_informacion
     environment:
       MYSQL_ROOT_PASSWORD: root
-      MYSQL_DATABASE: db_info
+      MYSQL_DATABASE: db_informacion
     ports:
       - "3306:3306"
 
